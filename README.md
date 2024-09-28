@@ -40,18 +40,7 @@ dplyr
 ggplot2
 tidyr
 reshape2
-Installation
-Clone this repository:
 
-bash
-Copy code
-git clone https://github.com/your-username/health-population-eda.git
-cd health-population-eda
-Install required packages in R:
-
-r
-Copy code
-install.packages(c("dplyr", "ggplot2", "tidyr", "reshape2"))
 Running the Analysis
 To run the analysis, open the R script in your R environment or IDE and run the commands step by step. The generated visualizations and statistical summaries will provide insights into the health indicators across the three countries.
 
