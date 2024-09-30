@@ -1,8 +1,3 @@
-NOTE:Dataset
-The dataset used for this analysis is available via Google Sheets. You can download or view the dataset from the following link:
-
-Download HNP Dataset
-
 Health and Population EDA: Kenya, South Africa, and Nigeria
 Overview
 This project explores and analyzes key health and population indicators for three African countries: Kenya, South Africa, and Nigeria. The focus is on understanding trends and distributions of life expectancy, health expenditure, overweight prevalence, and population growth using data from the Health, Nutrition, and Population Statistics (HNP) dataset.
