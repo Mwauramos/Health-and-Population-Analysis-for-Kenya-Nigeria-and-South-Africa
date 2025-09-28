@@ -1,0 +1,33 @@
+country,indicator,2010-2014,2020-2024,change,pct_change
+Kenya,Domestic general government health expenditure (% of current health expenditure),32.665110396,48.25379435333333,15.58868395733333,47.7
+Kenya,"Physicians (per 1,000 people)",0.1856,0.1,-0.08559999999999998,-46.1
+Kenya,Current health expenditure per capita (current US$),64.153129576,90.37938690333334,26.226257327333343,40.9
+Kenya,Out-of-pocket expenditure (% of current health expenditure),30.820579532,23.405467353333332,-7.415112178666668,-24.1
+Kenya,Domestic private health expenditure (% of current health expenditure),42.913891602,33.751720426666665,-9.162171175333334,-21.4
+Kenya,"Maternal mortality ratio (modeled estimate, per 100,000 live births)",208.4,167.75,-40.650000000000006,-19.5
+Kenya,"Mortality rate, under-5 (per 1,000)",51.14,41.425,-9.715000000000003,-19
+Kenya,Current health expenditure (% of GDP),5.090472508,4.46125968,-0.629212828,-12.4
+Kenya,"Life expectancy at birth, female (years)",63.3172,64.91625,1.5990500000000054,2.5
+Kenya,"Life expectancy at birth, total (years)",61.4908,62.504,1.0131999999999977,1.6
+Kenya,"Life expectancy at birth, male (years)",59.6792,60.224000000000004,0.5448000000000022,0.9
+Nigeria,Current health expenditure (% of GDP),3.34925046,3.9092652,0.5600147400000002,16.7
+Nigeria,"Mortality rate, under-5 (per 1,000)",131.22,109.675,-21.545,-16.4
+Nigeria,Current health expenditure per capita (current US$),88.167196652,80.23630778,-7.930888871999997,-9
+Nigeria,"Maternal mortality ratio (modeled estimate, per 100,000 live births)",1125.4,1030,-95.40000000000009,-8.5
+Nigeria,"Physicians (per 1,000 people)",0.376,0.3945,0.018500000000000016,4.9
+Nigeria,"Life expectancy at birth, male (years)",51.2674,53.456,2.188600000000001,4.3
+Nigeria,"Life expectancy at birth, total (years)",51.652,53.767,2.115000000000002,4.1
+Nigeria,"Life expectancy at birth, female (years)",52.026199999999996,54.07275,2.0465500000000034,3.9
+Nigeria,Out-of-pocket expenditure (% of current health expenditure),73.445578,75.68294271,2.2373647100000085,3
+Nigeria,Domestic private health expenditure (% of current health expenditure),76.176046754,77.68280538,1.506758626000007,2
+Nigeria,Domestic general government health expenditure (% of current health expenditure),14.37267456,14.247426666666668,-0.12524789333333253,-0.9
+South Africa,"Maternal mortality ratio (modeled estimate, per 100,000 live births)",192.8,139,-53.80000000000001,-27.9
+South Africa,"Mortality rate, under-5 (per 1,000)",43.62,34.325,-9.294999999999995,-21.3
+South Africa,Domestic general government health expenditure (% of current health expenditure),52.327822876,63.292395273333334,10.964572397333335,21
+South Africa,Domestic private health expenditure (% of current health expenditure),41.703239442,35.043791453333334,-6.659447988666663,-16
+South Africa,Current health expenditure (% of GDP),7.943360709999999,8.819495516666667,0.8761348066666672,11
+South Africa,Out-of-pocket expenditure (% of current health expenditure),7.348404122,6.58221372,-0.7661904019999994,-10.4
+South Africa,Current health expenditure per capita (current US$),617.580017088,555.2808431,-62.29917398800001,-10.1
+South Africa,"Life expectancy at birth, female (years)",64.0462,67.839,3.7927999999999997,5.9
+South Africa,"Life expectancy at birth, total (years)",61.3594,64.68825,3.3288499999999956,5.4
+South Africa,"Life expectancy at birth, male (years)",58.3578,61.44725,3.0894499999999994,5.3
