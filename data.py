@@ -197,10 +197,16 @@ def _build_frames():
     # SNAPSHOT_DF: latest non-null value per indicator per country
     snap_rows = []
     for country in COUNTRIES:
-        part = ts[ts["country"] == country].sort_values("year", ascending=False)
+        # Sort ascending so _fill interpolates correctly, then flip to get latest first
+        part = ts[ts["country"] == country].sort_values("year")
+        # Re-fill after concat to catch any remaining NaN edges
+        for col in INDICATORS.keys():
+            part[col] = _fill(part[col])
+        part = part.sort_values("year", ascending=False)
         row = {"country": country}
         for col in INDICATORS.keys():
-            row[col] = part[col].dropna().iloc[0] if not part[col].dropna().empty else np.nan
+            non_null = part[col].dropna()
+            row[col] = non_null.iloc[0] if not non_null.empty else np.nan
         snap_rows.append(row)
     snap = pd.DataFrame(snap_rows)
 

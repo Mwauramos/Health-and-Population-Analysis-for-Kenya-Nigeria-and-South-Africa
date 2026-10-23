@@ -78,7 +78,7 @@ with st.sidebar:
     <div style="font-size:0.78rem;color:{MUTED}">
       <b style="color:{BLUE_L}">Data</b><br>
       World Bank Health Nutrition and Population Statistics<br>
-      Calibrated synthetic data · 2010 to 2024<br><br>
+      Live API via wbgapi · 2010 to 2024<br><br>
       <b style="color:{BLUE_L}">Author</b><br>
       Amos Mwaura — ZENIK.AI<br>
       <a href="https://mwauramos.github.io/zenik-ai" style="color:{BLUE_L}">Portfolio</a>
@@ -387,7 +387,12 @@ with tabs[3]:
             """, unsafe_allow_html=True)
             for field, label, fmt, prefix in metrics:
                 val = row[field]
-                formatted = f"{prefix}{val:{fmt}}" if prefix == "$" else f"{val:{fmt}}{prefix}"
+                if pd.isna(val):
+                    formatted = "n/a"
+                elif prefix == "$":
+                    formatted = f"{prefix}{val:{fmt}}"
+                else:
+                    formatted = f"{val:{fmt}}{prefix}"
                 st.markdown(f"""
                 <div style="display:flex;justify-content:space-between;
                      padding:5px 0;border-bottom:1px solid #1e2d45">
