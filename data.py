@@ -102,7 +102,6 @@ def _fetch_all() -> pd.DataFrame:
             synth_part = synth[synth["country"] == country].sort_values("year")
             for col in INDICATORS.keys():
                 if part[col].isna().all():
-                    # No API data at all for this country+indicator — use synthetic
                     part[col] = synth_part[col].values
                 else:
                     part[col] = _fill(part[col])
