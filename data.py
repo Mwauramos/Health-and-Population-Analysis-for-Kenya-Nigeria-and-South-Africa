@@ -102,6 +102,7 @@ def _fetch_all() -> pd.DataFrame:
             synth_part = synth[synth["country"] == country].sort_values("year")
             for col in INDICATORS.keys():
                 if part[col].isna().all():
+                    # No API data at all for this country+indicator — use synthetic
                     part[col] = synth_part[col].values
                 else:
                     part[col] = _fill(part[col])
@@ -243,6 +244,8 @@ def radar_data() -> pd.DataFrame:
             norm = (v - mn) / (mx - mn) if mx != mn else 0.5
             if not higher_better:
                 norm = 1 - norm
+            # Floor at 0.15 so every country is visible on the radar
+            norm = max(0.15, norm)
             rows.append({"country": country, "metric": label, "score": round(norm, 3)})
     return pd.DataFrame(rows)
 
