@@ -94,12 +94,18 @@ def _fetch_all() -> pd.DataFrame:
 
         long = pd.DataFrame(rows)
 
-        # Fill gaps per country per column
+        # Patch columns that are entirely NaN for a country with synthetic values
+        synth = _synthetic_fallback()
         filled_parts = []
         for country in COUNTRIES:
             part = long[long["country"] == country].copy().sort_values("year")
+            synth_part = synth[synth["country"] == country].sort_values("year")
             for col in INDICATORS.keys():
-                part[col] = _fill(part[col])
+                if part[col].isna().all():
+                    # No API data at all for this country+indicator — use synthetic
+                    part[col] = synth_part[col].values
+                else:
+                    part[col] = _fill(part[col])
             filled_parts.append(part)
 
         result = pd.concat(filled_parts, ignore_index=True)
