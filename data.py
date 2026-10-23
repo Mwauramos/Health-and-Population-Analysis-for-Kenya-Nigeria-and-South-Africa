@@ -16,7 +16,7 @@ ISO3_REV = {v: k for k, v in ISO3.items()}
 
 COUNTRY_COLORS = {
     "Kenya":        "#2563eb",
-    "Nigeria":      "#06b6d4",
+    "Nigeria":      "#f59e0b",
     "South Africa": "#22c55e",
 }
 

@@ -32,7 +32,7 @@ RED   = "#ef4444"
 MUTED = "#6b7fa3"
 WHITE = "#f0f4ff"
 
-C = {"Kenya": BLUE_L, "Nigeria": CYAN, "South Africa": GREEN}
+C = {"Kenya": BLUE_L, "Nigeria": AMBER, "South Africa": GREEN}
 
 # ── CSS ────────────────────────────────────────────────────────────────────────
 st.markdown(f"""
@@ -98,7 +98,7 @@ st.markdown(f"""
 # ── KPI row ────────────────────────────────────────────────────────────────────
 k1, k2, k3, k4, k5 = st.columns(5)
 kpis = [
-    (k1, "563", "SA Health Spend / cap", GREEN, "vs Kenya $88 / Nigeria $74"),
+    (k1, "$563", "SA Health Spend / cap", GREEN, "vs Kenya $88 / Nigeria $74"),
     (k2, "69%",  "Nigeria OOP Burden",    CYAN,  "vs Kenya 24% / SA 7%"),
     (k3, "116",  "Nigeria U5 Mortality",  "#ef4444", "per 1,000 — highest of 3"),
     (k4, "18.3%","SA HIV Prevalence",     GREEN, "highest in the world"),
