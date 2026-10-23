@@ -340,8 +340,9 @@ with tabs[2]:
                 line=dict(color=C.get(country, BLUE_L), width=2), marker=dict(size=5)))
         fig_uhc.add_hline(y=80, line_dash="dash", line_color=AMBER,
                           annotation_text="SDG target: 80", annotation_font_color=AMBER)
-        fig_uhc.update_layout(**layout("UHC Service Coverage Index (2010 to 2024)"),
-                              yaxis=dict(range=[0, 100]))
+        uhc_layout = layout("UHC Service Coverage Index (2010 to 2024)")
+        uhc_layout["yaxis"]["range"] = [0, 100]
+        fig_uhc.update_layout(**uhc_layout)
         st.plotly_chart(fig_uhc, use_container_width=True)
 
     st.markdown(f"""
