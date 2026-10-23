@@ -8,7 +8,7 @@ A multi-tab Streamlit dashboard comparing health spending, outcomes, and system 
 
 ## Live Demo
 
-[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://africa-health-systems.streamlit.app)
+https://health-and-population-analysis-for-kenya-nigeria-and-south-afr.streamlit.app/
 
 > App may take 30 seconds to wake up on first load (Streamlit Community Cloud free tier).
 
